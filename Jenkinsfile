@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('pull') {
       steps {
-        bat 'https://github.com/innomatics321/java-tomcat-maven-example.git'
+        bat(script: 'https://github.com/innomatics321/java-tomcat-maven-example.git', encoding: 'master', label: 'java tomcat')
       }
     }
 
